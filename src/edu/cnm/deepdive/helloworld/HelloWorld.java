@@ -10,8 +10,18 @@ public class HelloWorld {
  * @param args    Command-line parameters (ignored)
  */
 	public static void main(String[] args) {
+	  String target;
+	  String message;
+	  
+	  if (args.length >0) {
+	    target=args[0];
+	  } else {
+	    target="World"; }
+	   
+	  message=String.format("Hello %s!", target);
+	  
 		// TODO Auto-generated method stub
-		emitMessage("Hello World!!!");
+		emitMessage(message);
 	}
 
 
