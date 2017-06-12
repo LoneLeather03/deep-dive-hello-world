@@ -22,8 +22,8 @@ public class HelloWorld {
 	  
 		// TODO Auto-generated method stub
 		emitMessage(message);
-		for (int i = 1; i <args.length; i++) {
-		  System.out.printf("Arg # %d %s%n", i, args[i]);
+		for (String arg : args) {
+		  System.out.printf("Argument: %s%n", arg);
 	}
 
 }
